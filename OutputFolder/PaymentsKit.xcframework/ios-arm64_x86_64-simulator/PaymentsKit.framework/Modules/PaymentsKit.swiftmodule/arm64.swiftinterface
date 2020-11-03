@@ -1,0 +1,24 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PaymentsKit
+import CommonCrypto
+import CryptoSwift
+import Foundation
+import GMEllipticCurveCrypto
+import JOSESwift
+@_exported import PaymentsKit
+import Swift
+public class TestEC {
+  public init(payload: Swift.String, contentEncryptionKey: Foundation.Data, transactionId: Swift.String)
+  public func compactSerialization() -> Swift.String
+  @objc deinit
+}
+public class Payment {
+  public init(amount: Swift.Int)
+  public func makePayment()
+  public func refundPayment()
+  public func payload()
+  public func hash()
+  public func createKeyPair()
+  @objc deinit
+}

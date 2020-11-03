@@ -1,0 +1,11 @@
+framework module PaymentsKit {
+  umbrella header "PaymentsKit.h"
+
+  export *
+  module * { export * }
+}
+
+module PaymentsKit.Swift {
+    header "PaymentsKit-Swift.h"
+    requires objc
+}
